@@ -4,7 +4,7 @@ import json
 import timeago, datetime
 
 
-class HelloWorld(object):
+class MongoServer(object):
     @cherrypy.expose
     def index(self):
         obj = mongo_helper.MongoHelper()
