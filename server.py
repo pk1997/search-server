@@ -6,6 +6,7 @@ import timeago, datetime
 
 class MongoServer(object):
     @cherrypy.expose
+    #read cherry py docs for more info
     def index(self):
         obj = mongo_helper.MongoHelper()
         data = obj.all_data()
